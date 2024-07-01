@@ -1,24 +1,18 @@
 ---
+title: Adding new posts in AstroPaper theme
 author: Sat Naing
 pubDatetime: 2022-09-23
 modDatetime: 2023-12-21
-title: Adding new posts in AstroPaper theme
-slug: adding-new-posts-in-astropaper-theme
-featured: true
-draft: false
-tags:
-  - docs
-description:
-  Some rules & recommendations for creating or adding new posts using AstroPaper
-  theme.
 ---
-
 Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
 
 ## Table of contents
 
 ## Image Example
+
 ![image-peter](@assets/images/og-peter.jpg)
+
+![](/src/assets/images/og-peter.jpg)
 
 ## Frontmatter
 
@@ -26,19 +20,7 @@ Frontmatter is the main place to store some important information about the blog
 
 Here is the list of frontmatter property for each post.
 
-| Property           | Description                                                                                 | Remark                                        |
-| ------------------ | ------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| **_title_**        | Title of the post. (h1)                                                                     | required<sup>\*</sup>                         |
-| **_description_**  | Description of the post. Used in post excerpt and site description of the post.             | required<sup>\*</sup>                         |
-| **_pubDatetime_**  | Published datetime in ISO 8601 format.                                                      | required<sup>\*</sup>                         |
-| **_modDatetime_**  | Modified datetime in ISO 8601 format. (only add this property when a blog post is modified) | optional                                      |
-| **_author_**       | Author of the post.                                                                         | default = SITE.author                         |
-| **_slug_**         | Slug for the post. This field is optional but cannot be an empty string. (slug: ""❌)       | default = slugified file name                 |
-| **_featured_**     | Whether or not display this post in featured section of home page                           | default = false                               |
-| **_draft_**        | Mark this post 'unpublished'.                                                               | default = false                               |
-| **_tags_**         | Related keywords for this post. Written in array yaml format.                               | default = others                              |
-| **_ogImage_**      | OG image of the post. Useful for social media sharing and SEO.                              | default = SITE.ogImage or generated OG image  |
-| **_canonicalURL_** | Canonical URL (absolute), in case the article already exists on other source.               | default = `Astro.site` + `Astro.url.pathname` |
+<table style="minWidth: 75px"><colgroup><col><col><col></colgroup><tbody><tr><th colspan="1" rowspan="1"><p>Property</p></th><th colspan="1" rowspan="1"><p>Description</p></th><th colspan="1" rowspan="1"><p>Remark</p></th></tr><tr><td colspan="1" rowspan="1"><p><strong><em>title</em></strong></p></td><td colspan="1" rowspan="1"><p>Title of the post. (h1)</p></td><td colspan="1" rowspan="1"><p>required*</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><em>description</em></strong></p></td><td colspan="1" rowspan="1"><p>Description of the post. Used in post excerpt and site description of the post.</p></td><td colspan="1" rowspan="1"><p>required*</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><em>pubDatetime</em></strong></p></td><td colspan="1" rowspan="1"><p>Published datetime in ISO 8601 format.</p></td><td colspan="1" rowspan="1"><p>required*</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><em>modDatetime</em></strong></p></td><td colspan="1" rowspan="1"><p>Modified datetime in ISO 8601 format. (only add this property when a blog post is modified)</p></td><td colspan="1" rowspan="1"><p>optional</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><em>author</em></strong></p></td><td colspan="1" rowspan="1"><p>Author of the post.</p></td><td colspan="1" rowspan="1"><p>default = SITE.author</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><em>slug</em></strong></p></td><td colspan="1" rowspan="1"><p>Slug for the post. This field is optional but cannot be an empty string. (slug: ""❌)</p></td><td colspan="1" rowspan="1"><p>default = slugified file name</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><em>featured</em></strong></p></td><td colspan="1" rowspan="1"><p>Whether or not display this post in featured section of home page</p></td><td colspan="1" rowspan="1"><p>default = false</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><em>draft</em></strong></p></td><td colspan="1" rowspan="1"><p>Mark this post 'unpublished'.</p></td><td colspan="1" rowspan="1"><p>default = false</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><em>tags</em></strong></p></td><td colspan="1" rowspan="1"><p>Related keywords for this post. Written in array yaml format.</p></td><td colspan="1" rowspan="1"><p>default = others</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><em>ogImage</em></strong></p></td><td colspan="1" rowspan="1"><p>OG image of the post. Useful for social media sharing and SEO.</p></td><td colspan="1" rowspan="1"><p>default = SITE.ogImage or generated OG image</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong><em>canonicalURL</em></strong></p></td><td colspan="1" rowspan="1"><p>Canonical URL (absolute), in case the article already exists on other source.</p></td><td colspan="1" rowspan="1"><p>default = <code>Astro.site</code> + <code>Astro.url.pathname</code></p></td></tr></tbody></table>
 
 > Tip! You can get ISO 8601 datetime by running `new Date().toISOString()` in the console. Make sure you remove quotes though.
 
@@ -107,7 +89,7 @@ Here are some recommendations, tips & ticks for creating new posts in AstroPaper
 
 ## Headings
 
-There's one thing to note about headings. The AstroPaper blog posts use title (title in the frontmatter) as the main heading of the post. Therefore, the rest of the heading in the post should be using h2 \~ h6.
+There's one thing to note about headings. The AstroPaper blog posts use title (title in the frontmatter) as the main heading of the post. Therefore, the rest of the heading in the post should be using h2 ~ h6.
 
 This rule is not mandatory, but highly recommended for visual, accessibility and SEO purposes.
 
@@ -163,8 +145,10 @@ When you put images in the blog post (especially for images under `public` direc
 
 My recommendation for image compression sites.
 
-- [TinyPng](https://tinypng.com/)
-- [TinyJPG](https://tinyjpg.com/)
+*   [TinyPng](https://tinypng.com/)
+    
+*   [TinyJPG](https://tinyjpg.com/)
+    
 
 ### OG Image
 
