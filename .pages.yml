@@ -19,3 +19,10 @@ content:
         options:
           format: YYYY-MM-DD[T]HH:mm:ss[Z]
           time: true
+      - name: body
+        label: Body
+        type: rich-text
+        options:
+          image:
+            path: src/media/posts
+            extensions: [ jpg, jpeg, png ]
