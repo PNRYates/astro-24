@@ -13,3 +13,9 @@ content:
         options:
           format: YYYY-MM-DD[T]HH:mm:ss[Z]
           time: true
+      - name: modDatetime
+        label: Modified Date
+        type: date
+        options:
+          format: YYYY-MM-DD[T]HH:mm:ss[Z]
+          time: true
