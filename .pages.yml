@@ -12,3 +12,4 @@ content:
         type: date
         options:
           format: YYYY-MM-DD[T]HH:mm:ss[Z]
+          time: true
