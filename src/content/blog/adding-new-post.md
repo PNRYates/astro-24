@@ -12,8 +12,6 @@ Here are some rules/recommendations, tips & ticks for creating new posts in Astr
 
 ![image-peter](@assets/images/og-peter.jpg)
 
-![](/src/assets/images/og-peter.jpg)
-
 ## Frontmatter
 
 Frontmatter is the main place to store some important information about the blog post (article). Frontmatter lies at the top of the article and is written in YAML format. Read more about frontmatter and its usage in [astro documentation](https://docs.astro.build/en/guides/markdown-content/).
