@@ -6,10 +6,17 @@ content:
     label: Posts
     type: collection
     path: src/content/blog
+    view:
+      fields: [ title, pubDatetime, modDatetime ]
+      sort: [ modDatetime ]
     fields:
       - { name: title, label: Title, type: string } 
       - { name: author, label: Author, type: string } 
       - { name: description, label: Description, type: string } 
+      - { name: slug, label: Slug, type: string } 
+      - { name: featured, label: Featured, type: boolean, default: false } 
+      - { name: draft, label: Draft, type: boolean, default: false } 
+      - { name: tags, label: Tag, type: string, list: true }
       - name: pubDatetime
         label: Publish Date
         type: date
