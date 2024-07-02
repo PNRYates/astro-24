@@ -1,5 +1,6 @@
 ---
 title: Adding new posts in AstroPaper theme
+description: adding new posts
 author: Sat Naing
 pubDatetime: 2022-09-23
 modDatetime: 2023-12-21
