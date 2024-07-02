@@ -3,7 +3,7 @@ title: Adding new posts in AstroPaper theme
 author: Sat Naing
 description: Description
 pubDatetime: 2022-09-23
-modDatetime: 2023-12-21
+modDatetime: 2023-12-22T12:00:00Z
 ---
 Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
 
