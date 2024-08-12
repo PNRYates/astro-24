@@ -3,7 +3,7 @@ title: Investing for teenagers in Australia
 author: Peter Yates
 description: Optimising for best long term investments
 slug: teenager-investing
-featured: false
+featured: true
 draft: false
 tags:
   - investing
