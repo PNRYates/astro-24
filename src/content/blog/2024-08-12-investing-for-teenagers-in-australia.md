@@ -11,7 +11,10 @@ pubDatetime: 2024-08-12
 modDatetime: 2024-08-12
 ---
 The main obstacle to avoid when investing as a minor (<18) is to avoid a Capital Gains Tax (CGT) event when turning 18. 
-> Capital Gains Tax: the tax investors are required to pay when realising their gains (e.g. selling shares). 
+> Capital Gains Tax: the tax investors are required to pay when realising their gains (e.g. selling shares).
+
+# Disclaimer
+This is NOT financial advice. I am a 15 year old child and can not give financial advice. If you lose money, that's on you.
 
 # Calculating CGT[^1]
 
